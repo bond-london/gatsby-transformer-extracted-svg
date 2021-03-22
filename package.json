@@ -1,0 +1,30 @@
+{
+  "name": "gatsby-transformer-extracted-svg",
+  "version": "1.0.0",
+  "description": "Extract SVG from SVG files",
+  "main": "index.js",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-plugin-typescript",
+    "typescript",
+    "svg"
+  ],
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.14.35",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "@types/svgo": "^2.0.0",
+    "gatsby": "^3.1.1",
+    "gatsby-source-filesystem": "^3.1.0",
+    "install": "^0.13.0",
+    "mini-svg-data-uri": "^1.2.3",
+    "npm": "^7.6.3",
+    "svgo": "^2.2.2"
+  }
+}
