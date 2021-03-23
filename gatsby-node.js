@@ -4,12 +4,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createSchemaCustomization = exports.createResolvers = void 0;
-const promises_1 = require("fs/promises");
+const fs_1 = __importDefault(require("fs"));
 const mini_svg_data_uri_1 = __importDefault(require("mini-svg-data-uri"));
 const svgo_1 = require("svgo");
 async function parseSVG(path) {
     try {
-        const svg = await promises_1.readFile(path, "utf8");
+        const svg = await fs_1.default.promises.readFile(path, "utf8");
         const result = svgo_1.optimize(svg, { multipass: true });
         const encoded = mini_svg_data_uri_1.default(result.data);
         return { content: result.data, encoded, path };

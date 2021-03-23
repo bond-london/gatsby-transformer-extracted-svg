@@ -1,12 +1,12 @@
 import { CreateResolversArgs, CreateSchemaCustomizationArgs } from "gatsby";
-import { readFile } from "fs/promises";
+import fs from "fs";
 import svgToTinyDataUri from "mini-svg-data-uri";
 import { optimize } from "svgo";
 import { FileSystemNode } from "gatsby-source-filesystem";
 
 async function parseSVG(path: string) {
   try {
-    const svg = await readFile(path, "utf8");
+    const svg = await fs.promises.readFile(path, "utf8");
     const result = optimize(svg, { multipass: true });
     const encoded = svgToTinyDataUri(result.data);
     return { content: result.data, encoded, path };
