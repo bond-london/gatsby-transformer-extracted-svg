@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-transformer-extracted-svg",
-  "version": "1.0.2",
+  "name": "@bond-london/gatsby-transformer-extracted-svg",
+  "version": "1.0.4",
   "description": "Extract SVG from SVG files",
   "main": "index.js",
   "keywords": [
@@ -13,10 +13,10 @@
   "scripts": {
     "build": "tsc -p ."
   },
-  "author": "",
+  "author": "Nick Randell <nick@nickrandell.com>",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^14.14.44",
+    "@types/node": "^15.0.3",
     "@types/react": "^17.0.5",
     "@types/react-dom": "^17.0.4",
     "@types/svgo": "^2.3.0",
@@ -24,7 +24,6 @@
     "gatsby-source-filesystem": "^3.4.0",
     "install": "^0.13.0",
     "mini-svg-data-uri": "^1.3.3",
-    "npm": "^7.12.1",
     "svgo": "^2.3.0"
   }
 }
