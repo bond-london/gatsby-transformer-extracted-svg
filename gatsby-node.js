@@ -10,8 +10,8 @@ const svgo_1 = require("svgo");
 async function parseSVG(path) {
     try {
         const svg = await fs_1.default.promises.readFile(path, "utf8");
-        const result = svgo_1.optimize(svg, { multipass: true });
-        const encoded = mini_svg_data_uri_1.default(result.data);
+        const result = (0, svgo_1.optimize)(svg, { multipass: true });
+        const encoded = (0, mini_svg_data_uri_1.default)(result.data);
         return { content: result.data, encoded, path };
     }
     catch (ex) {
