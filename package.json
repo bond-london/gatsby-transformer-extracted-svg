@@ -1,6 +1,6 @@
 {
   "name": "@bond-london/gatsby-transformer-extracted-svg",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Extract SVG from SVG files",
   "main": "index.js",
   "keywords": [
