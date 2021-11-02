@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "removeComments": true,
     "target": "ES2018",
     "module": "CommonJS",
     "lib": ["dom", "ES2017"],

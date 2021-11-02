@@ -1,11 +1,9 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createSchemaCustomization = exports.createResolvers = void 0;
-const fs_1 = __importDefault(require("fs"));
-const mini_svg_data_uri_1 = __importDefault(require("mini-svg-data-uri"));
+const tslib_1 = require("tslib");
+const fs_1 = (0, tslib_1.__importDefault)(require("fs"));
+const mini_svg_data_uri_1 = (0, tslib_1.__importDefault)(require("mini-svg-data-uri"));
 const svgo_1 = require("svgo");
 async function parseSVG(path) {
     try {
